@@ -1,0 +1,219 @@
+html{scroll-behavior: smooth;  }
+*{padding:0; margin:0; box-sizing: border-box;}
+body{background: #f6f6f6; font-family: Georgia, 'Times New Roman', Times, serif;}
+
+header{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header img{
+    width:30rem;
+    height:auto;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+}
+@keyframes {
+    0%{
+        box-shadow: 0 0 0 0px rgba(112, 2, 2, 0.927);
+    }
+    50%{
+        box-shadow: 0 0 0 30px rgba(97, 92, 92, 0.153);
+    }
+}
+header h3{
+    color:rgb(133, 51, 8);
+    margin:1.5rem 0; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+header p{
+    color:rgb(13, 13, 13);
+}
+.arrow{
+    color:rgb(7, 7, 7);
+    margin-top: 10rem;
+    font-size: 10rem;
+    animation: arrow 1s ease-in-out infinite;
+}
+@keyframes arrow{
+    0%{color: #025454;}
+    50%{color: #031d1d;}
+    100%{color:#011619;}
+
+}
+.container{
+    width: 100%;
+    height: 150vh;
+    display:grid;
+    grid-template-columns: 1fr  1fr  1fr 1fr;
+    grid-template-rows: 1fr  1fr 0.8fr 0.2fr;
+    gap:1rem;
+    grid-template-areas: "profile profile skills skills"
+                         "edu edu edu  lang"
+                         "contact exp exp exp"
+                         "footer footer footer footer";
+                         padding:2rem;
+}
+        .profile{
+            background: rgb(93, 158, 23);
+            color:rgb(0, 0, 0);
+            padding: 8rem;
+            grid-area: profile;
+
+        }
+        .skills{
+            background: #143034;
+            color:rgb(254, 254, 254);
+            padding: 2rem;
+            grid-area: skills;
+
+        }
+        .edu{
+            background: #11240c;
+            color:rgb(252, 249, 249);
+            padding: 2rem;
+            grid-area: edu;
+        }
+        .lang{
+            background:rgb(27, 1, 1);
+            color:#80806d;
+            padding: 2rem;
+            grid-area: lang;
+        }
+        .contact{
+            background:rgb(1, 49, 30);
+            color:#59d5d5;
+            padding: 2rem;
+            grid-area: contact;
+            
+        }
+        .exp{
+            background: #011f1f;
+            color:white;
+            padding: 2rem;
+            grid-area: exp;
+            }
+        footer{
+            color:white;
+            background: rgb(6, 47, 45);
+            padding: 2rem;
+            grid-area: footer;
+        }
+
+h2{
+    margin-bottom: 5rem;
+
+}   
+.profile p{
+    padding:0.5rem 4rem;
+    text-align: justify;
+    line-height: 4.2rem;
+}   
+.profile a{
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background: #210815;
+    color:white;
+}  
+.skills div{
+    width:100%;
+    padding:0.5rem 1rem;
+
+}
+.skills div progress[value]{
+    width:100%;
+    height:1rem;
+}
+.edu h2{
+    letter-spacing: 0.4rem;
+}
+.edu p{
+    padding:0.8rem 1rem;
+    text-align: justify;
+    line-height: 3.2rem;
+}
+.edu a{
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background:rgb(245, 158, 158);
+    color:black;
+    font-weight: bold;
+
+}
+/* portfolio sec  */
+
+.portfolio-sec{
+    height: 110vh;
+    background-color: rgb(7, 7, 7);
+}
+
+.portfolio > h4{
+    color: rgb(246, 117, 117)
+    margin-bottom: 50px;
+}
+
+.portfolio-child img{
+    width: 15%;
+}
+
+.portolio-parent{
+    gap: 30px;
+}
+
+.portfolio-child{
+    border: 1px solid var(--red-color);
+    border-radius: 8px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-child:hover{
+    transform: scale(1.1);
+    background-color: rgb(3, 87, 108);
+}
+
+.portfolio-child h3{
+    margin-top: 10px;
+}
+
+.portfolio-child p{
+    margin-top: 5px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolio-child button{
+    margin: 15px;
+}
+.contact div i{
+    margin-right: 0.2rem;
+}   
+.contact p{
+    margin:1rem 0;
+    cursor:pointer;
+}  
+.exp p{
+    padding:0.3rem 1rem;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+footer i{
+    background: white;
+    color:black;
+    padding:0.5rem;
+    margin:1rem 0.2rem;
+    border-radius: 50%;
+    transition: 0.4s;
+} 
+footer i:hover{
+    background: rgba(4, 209, 17, 0.534);
+    color:white;
+    cursor:pointer;
+}
